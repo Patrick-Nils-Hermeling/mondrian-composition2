@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mondrian Composition 2</title>
+
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 6px;
+            grid-template-columns: 200px 150px 150px 90px;
+            grid-template-rows: 80px 120px 100px 100px 100px 60px;
+            background-color: black;   
+        }
+        
+
+        .red1 {
+            background-color: #E72F24;
+            grid-row: 1/4;
+        }
+
+        .red2 {
+            background-color: #E72F24;
+            grid-area: 1/4/3/5;
+        }
+
+        .yellow1 {
+            grid-area: 1/2/2/4;
+            background-color: #F9D01E;
+        }
+
+        .yellow2 {
+            background-color: #F9D01E;
+            grid-area: 6/4/7/5;
+        }
+
+        .white1,.white2,.white3,.white4,.white5,.white6,.white7 {
+            background-color: #F0F1EC;
+        }
+
+        .blue {
+            background-color: #004592;
+            grid-area: 5/2/7/4;
+        }
+
+        .black {
+            background-color: #232629;
+            grid-area: 6/1/7/2;
+        }
+        
+        .white1 {
+            grid-area: 2/2/4/3;
+        }
+        .white2 {
+            grid-area: 2/3/4/4;
+        }
+        .white5 {
+            grid-area:  4/4/6/5;
+        }
+        .white7 {
+            grid-area: 4/2/5/4;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+   
+    <div class="grid-container">
+        <div class="red1"></div>
+        <div class="red2"></div>
+        <div class="yellow1"></div>
+        <div class="yellow2"></div>
+        <div class="black"></div>
+        <div class="blue"></div>
+        <div class="white1"></div>
+        <div class="white2"></div>
+        <div class="white3"></div>
+        <div class="white4"></div>
+        <div class="white5"></div>
+        <div class="white6"></div>
+        <div class="white7"></div>
+        
+    </div>
+    
+
+   
+</body>
+</html>
